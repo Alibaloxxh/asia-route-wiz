@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroPhone from "@/assets/hero-phone.asset.json";
-import logoFull from "@/assets/rasta-logo-full.asset.json";
-import icon from "@/assets/rasta-icon.asset.json";
+
+const heroPhone = "/hero-phone.jpeg";
+const logoFull = "/rasta-logo-full.png";
+const icon = "/rasta-icon.png";
 import {
   Navigation,
   Fuel,
@@ -28,7 +29,7 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "AI-powered navigation built for Asia. RastaAI ranks 3 routes by time, fuel, traffic, and comfort — across 15+ major cities." },
       { property: "og:title", content: "RastaAI — Smarter than the shortest route" },
       { property: "og:description", content: "AI-powered navigation built for Asia. Compare Express, Smart, and Scenic routes in one tap." },
-      { property: "og:image", content: heroPhone.url },
+      { property: "og:image", content: heroPhone },
     ],
   }),
   component: Landing,
@@ -54,7 +55,7 @@ function Landing() {
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-background/70 border-b border-border/50">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#" className="flex items-center gap-2.5">
-            <img src={icon.url} alt="RastaAI" className="w-9 h-9 rounded-xl" />
+            <img src={icon} alt="RastaAI" className="w-9 h-9 rounded-xl" />
             <span className="font-semibold tracking-tight text-lg">RastaAI</span>
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
@@ -107,7 +108,7 @@ function Landing() {
 
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 via-transparent to-secondary/30 blur-3xl" />
-            <img src={heroPhone.url} alt="RastaAI route comparison on iPhone" className="relative w-full max-w-xl mx-auto drop-shadow-2xl" />
+            <img src={heroPhone} alt="RastaAI route comparison on iPhone" className="relative w-full max-w-xl mx-auto drop-shadow-2xl" />
           </div>
         </div>
       </section>
@@ -200,7 +201,7 @@ function Landing() {
                 </p>
               </div>
               <div className="flex justify-center">
-                <img src={logoFull.url} alt="RastaAI logo" className="w-full max-w-sm rounded-2xl border border-border" />
+                <img src={logoFull} alt="RastaAI logo" className="w-full max-w-sm rounded-2xl border border-border" />
               </div>
             </div>
           </div>
@@ -223,7 +224,7 @@ function Landing() {
       {/* CTA */}
       <section id="download" className="relative py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <img src={icon.url} alt="" className="w-20 h-20 rounded-2xl mx-auto mb-8 glow-teal" />
+          <img src={icon} alt="" className="w-20 h-20 rounded-2xl mx-auto mb-8 glow-teal" />
           <h2 className="text-5xl md:text-6xl font-bold tracking-tight">
             Drive <span className="text-gradient">smarter</span>.<br />Not just shorter.
           </h2>
@@ -242,7 +243,7 @@ function Landing() {
       <footer className="border-t border-border/50 py-10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-4">
           <div className="flex items-center gap-2.5">
-            <img src={icon.url} alt="" className="w-7 h-7 rounded-lg" />
+            <img src={icon} alt="" className="w-7 h-7 rounded-lg" />
             <span className="text-sm text-muted-foreground">© 2026 RastaAI — Smart navigation, AI powered.</span>
           </div>
           <a href="mailto:halikorai@gmail.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition">
