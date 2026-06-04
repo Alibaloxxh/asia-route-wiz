@@ -15,7 +15,7 @@ import {
   ArrowRight,
   Apple,
   Play,
-  Route,
+  Route as RouteIcon,
   Zap,
   Mountain,
 } from "lucide-react";
