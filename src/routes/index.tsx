@@ -36,7 +36,7 @@ export const Route = createFileRoute("/")({
 const cities = ["Karachi","Lahore","Islamabad","Peshawar","Mumbai","Delhi","Bangalore","Bangkok","Dubai","Tehran","Jakarta","Manila","Hanoi","Kuala Lumpur","Dhaka"];
 
 const features = [
-  { icon: Route, title: "3 Smart Routes", desc: "Express, Smart, and Scenic — ranked side-by-side by our model." },
+  { icon: RouteIcon, title: "3 Smart Routes", desc: "Express, Smart, and Scenic — ranked side-by-side by our model." },
   { icon: Fuel, title: "Fuel Cost Estimates", desc: "See exact petrol spend per route, tuned to your vehicle." },
   { icon: Navigation, title: "Turn-by-turn GPS", desc: "Live, voice-guided navigation that adapts as you drive." },
   { icon: Gauge, title: "Real-time Traffic", desc: "Live indicators built on Asia-specific traffic patterns." },
