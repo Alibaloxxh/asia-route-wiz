@@ -18,6 +18,7 @@ import {
   Route as RouteIcon,
   Zap,
   Mountain,
+  Mail,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
