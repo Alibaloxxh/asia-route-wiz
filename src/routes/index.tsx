@@ -18,6 +18,7 @@ import {
   Route as RouteIcon,
   Zap,
   Mountain,
+  Mail,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -197,11 +198,6 @@ function Landing() {
                 <p className="mt-5 text-muted-foreground leading-relaxed max-w-lg">
                   Trained on real driving data with XGBoost and LightGBM, RastaAI predicts time, cost, and comfort with precision that generic global maps can't match.
                 </p>
-                <div className="mt-8 flex flex-wrap gap-2">
-                  {["React.js","Next.js","FastAPI","XGBoost","LightGBM","Supabase","OpenStreetMap"].map((t) => (
-                    <span key={t} className="px-3 py-1.5 rounded-full bg-background border border-border text-sm text-muted-foreground">{t}</span>
-                  ))}
-                </div>
               </div>
               <div className="flex justify-center">
                 <img src={logoFull.url} alt="RastaAI logo" className="w-full max-w-sm rounded-2xl border border-border" />
@@ -244,11 +240,14 @@ function Landing() {
       </section>
 
       <footer className="border-t border-border/50 py-10">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-4">
           <div className="flex items-center gap-2.5">
             <img src={icon.url} alt="" className="w-7 h-7 rounded-lg" />
             <span className="text-sm text-muted-foreground">© 2026 RastaAI — Smart navigation, AI powered.</span>
           </div>
+          <a href="mailto:halikorai@gmail.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition">
+            <Mail className="w-4 h-4" /> halikorai@gmail.com
+          </a>
           <div className="text-sm text-muted-foreground">Made for Asia 🌏</div>
         </div>
       </footer>
