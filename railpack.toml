@@ -1,0 +1,6 @@
+[build]
+cmd = "bun run build"
+
+[start]
+cmd = "node dist/server/server.js"
+
