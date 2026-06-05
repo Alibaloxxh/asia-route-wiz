@@ -2,5 +2,5 @@
 cmd = "bun run build"
 
 [start]
-cmd = "node dist/server/server.js"
+cmd = "node .output/server/index.mjs"
 
